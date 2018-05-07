@@ -1,0 +1,28 @@
+/**
+ * 宽的横线
+ */
+import React, { PureComponent } from 'react'
+import { View, Text, StyleSheet } from 'react-native'
+
+import color from './color'
+
+
+class SpacingView extends PureComponent {
+    render() {
+        return (
+            <View style={styles.container}>
+            </View>
+        )
+    }
+}
+
+
+const styles = StyleSheet.create({
+    container: {
+        height: 14,
+        backgroundColor: color.bg,
+    },
+})
+
+
+export default SpacingView

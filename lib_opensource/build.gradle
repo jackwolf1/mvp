@@ -1,0 +1,100 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    // Support libraries
+    api deps.support.app_compat
+    api deps.support.design
+    api deps.support.cardview
+    api deps.support.recyclerview
+
+    // Architecture components
+    api deps.lifecycle.runtime
+    api deps.lifecycle.extensions
+    kapt deps.lifecycle.compiler
+    api deps.room.runtime
+    kapt deps.room.compiler
+
+    //glide
+    api deps.glide.runtime
+    api deps.glide.okhttp3_integration
+
+    //rxbinding
+    api deps.rxbinding.runtime
+    api deps.rxbinding.support_v4
+    api deps.rxbinding.appcompat_v7
+    api deps.rxbinding.design
+
+    //rxlifecycle
+    api deps.rxlifecycle.runtime
+    api deps.rxlifecycle.android
+    api deps.rxlifecycle.components
+
+    //rxpermissions
+    api  deps.rxpermissions
+
+    // butterknife
+    api deps.butterknife.runtime
+    kapt deps.butterknife.compiler
+
+    //okhttp3
+    api deps.retrofit.runtime
+    api deps.retrofit.gson
+    api deps.retrofit.adapter_rxjava2
+    api deps.okhttp.okhttp3
+    api deps.okhttp.okhttp3_logging_interceptor
+
+    // RxJava
+    api deps.rxjava2
+    api deps.rxandroid
+
+    //kotlin
+    api deps.kotlin.stdlib
+
+    //dagger
+    api deps.dagger.runtime
+    api deps.dagger.android
+    api deps.dagger.android_support
+    kapt deps.dagger.compiler
+    kapt deps.dagger.android_processor
+
+    //router
+    api deps.arouter.runtime
+    //logutils
+    api deps.logutils
+    //UI
+    api deps.constraint_layout
+}

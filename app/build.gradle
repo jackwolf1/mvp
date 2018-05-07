@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+//使用butterknife
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'xuying'
+            keyPassword '1234567890'
+            storeFile file('E:/tfkjSVN/mvp/key.jks')
+            storePassword '1234567890'
+        }
+    }
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+    defaultConfig {
+        applicationId "com.mvp.tfkj.mvpbim"
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //kotlin必须要配置
+    api deps.kotlin.stdlib
+    //arouter必须配置
+    kapt deps.arouter.compiler
+    //dragger2必须要的配置
+    kapt deps.dagger.compiler
+    kapt deps.dagger.android_processor
+    //butterknife
+    kapt deps.butterknife.compiler
+    //rn
+    if (isModule.toBoolean()) {
+        implementation project(':lib_common')
+        implementation project(':lib_model')
+    } else {
+        implementation project(':login')
+    }
+
+}

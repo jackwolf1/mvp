@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="separateLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">#4b000000</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#4b000000</item>
+        <item name="colorControlActivated">@color/main_color</item>
+    </style>
+    <!-- 注册登录 -->
+    <style name="edtLogin">
+        <item name="android:theme">@style/MyEditText</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <!--<item name="android:background">@color/transparent</item>-->
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#0b192e</item>
+        <item name="android:textColorHint">#bdc3cd</item>
+        <item name="android:textSize">@dimen/pt30</item>
+    </style>
+
+    <!--设置不可用按钮的背景样式-->
+    <style name="MainButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#fb8083</item>
+        <item name="android:disabledAlpha">1</item>
+    </style>
+
+    <style name="btnMain" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/MainButton</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/pt32</item>
+    </style>
+
+    <!-- 门店信息 -->
+    <style name="tvApplyDetail">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#4d5561</item>
+        <item name="android:textSize">@dimen/pt28</item>
+    </style>
+
+    <style name="edtApplyDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#0b192e</item>
+        <item name="android:textColorHint">#bdc3cd</item>
+        <item name="android:textSize">@dimen/pt28</item>
+    </style>
+
+
+</resources>

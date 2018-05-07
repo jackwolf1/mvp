@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 字体对应大小 -->
+    <dimen name="px100">52sp</dimen>
+    <dimen name="px60">32sp</dimen>
+    <dimen name="px50">27sp</dimen>
+    <dimen name="px45">25sp</dimen>
+    <dimen name="px40">21sp</dimen>
+    <dimen name="px36">20sp</dimen>
+    <dimen name="px34">19sp</dimen>
+    <dimen name="px32">18sp</dimen>
+    <dimen name="px30">17sp</dimen>
+    <dimen name="px28">16sp</dimen>
+    <dimen name="px26">15sp</dimen>
+    <dimen name="px24">14sp</dimen>
+    <dimen name="px22">13sp</dimen>
+    <dimen name="px20">12sp</dimen>
+    <dimen name="px18">11sp</dimen>
+    <dimen name="px16">10sp</dimen>
+
+
+    <!-- 1pt 大概等于 2.22sp-->
+    <dimen name="pt100">45.45sp</dimen>
+    <dimen name="pt60">27.27sp</dimen>
+    <dimen name="pt50">22.72sp</dimen>
+    <dimen name="pt45">20.45sp</dimen>
+    <dimen name="pt40">18.18sp</dimen>
+    <dimen name="pt36">16.36sp</dimen>
+    <dimen name="pt34">15.45sp</dimen>
+    <dimen name="pt32">14.54sp</dimen>
+    <dimen name="pt30">13.63sp</dimen>
+    <dimen name="pt28">12.72sp</dimen>
+    <dimen name="pt26">11.81sp</dimen>
+    <dimen name="pt24">10.90sp</dimen>
+    <dimen name="pt22">10sp</dimen>
+    <dimen name="pt20">9.9sp</dimen>
+    <dimen name="pt18">8.18sp</dimen>
+    <dimen name="pt16">7.27sp</dimen>
+
+   <!-- 高度 -->
+    <dimen name="toolbar_height">48dp</dimen>
+
+    <!-- 分割线高度 -->
+    <dimen name="line_height">0.5dp</dimen>
+    <!-- 分割线高度 -->
+    <dimen name="line_big_height">10dp</dimen>
+
+</resources>

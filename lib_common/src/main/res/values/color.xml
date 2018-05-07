@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fa080e</color>
+    <color name="colorPrimaryDark">#fa080e</color>
+    <color name="colorAccent">#fa080e</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00ffffff</color>
+    <!--主要颜色-->
+    <!--主色调-->
+    <color name="main_color">#fa080e</color>
+    <!-- 标题文字颜色 -->
+    <color name="main_title">#ffffff</color>
+
+    <!-- 输入文字 -->
+    <color name="default_deep_gray">#6a6a6a</color>
+    <color name="default_light_gray">#a0a0a0</color>
+
+    <!-- 分割线 -->
+    <color name="line">#bcc3cd</color>
+    <!-- 分割线 -->
+    <color name="lineBig">#10000000</color>
+
+    <!--默认的颜色-->
+    <color name="hint_color">#b4b4b4</color>
+    <color name="text_color">#1b1a1a</color>
+
+
+    <color name="black1">#1a000000</color>
+    <color name="black2">#33000000</color>
+    <color name="black3">#4b000000</color>
+    <color name="black4">#66000000</color>
+    <color name="black5">#80000000</color>
+    <color name="black6">#99000000</color>
+    <color name="black7">#b2000000</color>
+    <color name="black8">#cc000000</color>
+    <color name="black">#000000</color>
+</resources>
